@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+# POC code to take advantage of the OpenSSH username enumeration vulnerability recently discovered (August 2018).
+# This approach is threaded and was tested with paramiko version 2.4.1.
+# Vulnerability discussed here: http://seclists.org/oss-sec/2018/q3/124
+
 import paramiko
 import socket
 import threading
