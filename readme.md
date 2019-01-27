@@ -19,3 +19,7 @@ The reason mine allows threading is that it doesn't clobber the functionality of
 ## substitution_cipher.py
 
 This is byte-substitution cipher code. I also included a variant that does substitution + encryption.
+
+## local_sharetool
+
+Shares links across a local network and opens them in the default webbrowser. It uses UDP broadcast, encrypts/decrypts at client and server, and prompts you before sending a URL off.
