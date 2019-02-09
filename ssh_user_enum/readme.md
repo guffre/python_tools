@@ -16,3 +16,7 @@ The reason mine allows threading is that it doesn't clobber the functionality of
         def ssh_bruteforce_usernames(host,minlength=1,maxlength=8,threads=16,port=22)
 
     These allow using dictionaries or simply bruteforcing, as the names suggest.
+
+## Requirements
+
+    paramiko
