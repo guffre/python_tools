@@ -1,25 +1,19 @@
-## stegopng.py
+## stegopng
 
 Python stegonography tool with builtin encryption/obfuscation of the data.
-Places 6 bits of data into each pixel of a .png-type file.
-Only tested with .png files, but will probably work with .bmp files as well.
 
-Oh, it also encrypts the data. Nice.
+## leetifier
 
-## leet.py
-
-This just generates "leet" word permutations. It uses an easily updatable dictionary if you have certain substitutions in mind.
+Generates "leet" word permutations.
 
 ## ssh_user_enum
 
-This is PoC code for CVE-2018-15473 (OpenSSH < 7.7). The advantage of using *my* PoC code is that it allows threading, unlike the vast majority (or all?) other PoC codes you find out there using paramiko.
+This is PoC code for CVE-2018-15473 (OpenSSH < 7.7). The advantage of using this particular PoC code is that it allows threading, unlike the vast majority (or all?) other PoC codes you find out there using paramiko.
 
-The reason mine allows threading is that it doesn't clobber the functionality of paramiko by temporarily replacing internal functions (looking at you, add_boolean PoC's).
-
-## substitution_cipher.py
+## substitution_cipher
 
 This is byte-substitution cipher code. I also included a variant that does substitution + encryption.
 
-## local_sharetool
+## url_share
 
 Shares links across a local network and opens them in the default webbrowser. It uses UDP broadcast, encrypts/decrypts at client and server, and prompts you before sending a URL off.
