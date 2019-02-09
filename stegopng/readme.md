@@ -16,4 +16,6 @@ Oh, it also encrypts the data. Nice.
     
     `desteg()` works in a similar fashion: `def desteg(image, savefile):`
     
-    
+## Requirements
+
+    pillow
