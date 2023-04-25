@@ -2,7 +2,8 @@
 import sys
 from itertools import product
 
-leet = {'a':['@','4'],
+def leetify(word):
+    leet = {'a':['@','4'],
         'c':['k'],
         'e':['3'],
         'g':['9'],
@@ -13,6 +14,10 @@ leet = {'a':['@','4'],
         't':['7'],
         'u':['oo','00'],
         'y':['j']}
+    
+    branches = [set(leet.get(c.lower(),[c])+[c,c.upper(),c.lower()]) for c in word]
+    for mangled in product(*branches):
+        yield ''.join(mangled)
 
 if __name__ == '__main__':
     run = True
@@ -28,6 +33,5 @@ if __name__ == '__main__':
         run = False
     if run:
         for word in dictionary:
-            branches = [set(leet.get(c.lower(),[c])+[c,c.upper(),c.lower()]) for c in word]
-            for mangled in product(*branches):
-                print(''.join(mangled))
+            for combo in leetify(word):
+                print(combo)
